@@ -1,0 +1,11 @@
+1  mkdir palash
+    2  cd palash
+    3  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    4    sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+    5  yum install jenkins fontconfig java11-openjdk -y
+    6  sudo amazon-linux-extras install java-openjdk11
+    7    yum install jenkins
+    8  systemctl start jenkins.service
+    9  systemctl status jenkins.service
+   10  yum install git -y
+   11  history
